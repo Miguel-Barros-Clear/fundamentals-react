@@ -7,6 +7,8 @@ import Secund from "./components/basics/secund";
 import Card from "./components/layout/card";
 
 import "./app.css";
+import Family from "./components/basics/family";
+import FamilyMember from "./components/basics/familyMember";
 
 export default function App(props) {
   return (
@@ -14,6 +16,14 @@ export default function App(props) {
       <h1>Funtamentos React</h1>
 
       <div className="Cards">
+        <Card title="#5 - Membros da familia" color="#FA1700">
+          <Family lastName="Silva">
+            <FamilyMember name="Pedro" />
+            <FamilyMember name="Ana" />
+            <FamilyMember name="Gustavo" />
+          </Family>
+        </Card>
+
         <Card title="#4 - Numero aleatorio" color="#FA6900">
           <Random min={1} max={60} />
         </Card>
