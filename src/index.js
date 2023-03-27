@@ -3,10 +3,10 @@ import React from 'react'
 
 import './index.css'
 
-const tag = <strong>Hello world!</strong>
+import First from './components/basics/first'
 
 ReactDOM.render(
     <div>
-        {tag}
+        <First></First>
     </div>
     , document.getElementById('root'))
