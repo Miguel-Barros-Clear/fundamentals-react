@@ -13,7 +13,7 @@ ReactDOM.render(
             title="Situação do aluno"
             subTitle="Very good!"
             aluno="Pedro"
-            nota={9.3}
+            nota={8.3}
         />
         <Secund
             title="Situação do aluno"

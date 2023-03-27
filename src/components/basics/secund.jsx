@@ -2,6 +2,7 @@ import React from "react";
 
 export default function Secund(props) {
   const status = props.nota >= 7 ? "Aprovado" : "Recuperação";
+  const notaInt = Math.ceil(props.nota);
 
   return (
     <div>
@@ -9,7 +10,7 @@ export default function Secund(props) {
       <p>
         <strong>{props.aluno} </strong>
         tem nota
-        <strong> {props.nota}</strong> e está
+        <strong> {notaInt}</strong> e está
         <strong> {status}</strong>!
       </p>
     </div>
