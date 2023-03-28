@@ -14,7 +14,7 @@ import TableProducts from "./components/repeticao/tableProducts";
 import EvenOrOdd from "./components/conditional/evenOrOdd";
 import UserInfo from "./components/conditional/userInfo";
 import DirectParent from "./components/comunication/directParent";
-import { IndirectParent } from "./components/comunication/indirectParent";
+import IndirectParent from "./components/comunication/indirectParent";
 
 export default function App(props) {
   return (

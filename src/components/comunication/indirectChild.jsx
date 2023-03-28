@@ -1,12 +1,15 @@
 import React from "react";
 
-export const IndirectChild = (props) => {
-  const callback = props.handelClick;
+export default (props) => {
+  const callback = props.onClick;
+
+  const randomAge = () => parseInt(Math.random() * 20) + 50;
+  const randomNerd = () => Math.random() > 0.5;
 
   return (
     <div>
       <div>filho</div>
-      <button handelClick={() => callback("João", 53, true)}>
+      <button onClick={() => callback("João", randomAge(), randomNerd())}>
         Fornecer Informações
       </button>
     </div>
