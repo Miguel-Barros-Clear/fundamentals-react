@@ -15,6 +15,7 @@ import EvenOrOdd from "./components/conditional/evenOrOdd";
 import UserInfo from "./components/conditional/userInfo";
 import DirectParent from "./components/comunication/directParent";
 import IndirectParent from "./components/comunication/indirectParent";
+import Input from "./components/form/input";
 
 export default function App(props) {
   return (
@@ -22,6 +23,10 @@ export default function App(props) {
       <h1>Funtamentos React</h1>
 
       <div className="Cards">
+        <Card title="#11 - Component controlado (input)" color="#00F0fce">
+          <Input />
+        </Card>
+
         <Card title="#10 - Comunicação indireta" color="#ff00cc">
           <IndirectParent />
         </Card>
