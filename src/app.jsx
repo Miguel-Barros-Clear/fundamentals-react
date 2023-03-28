@@ -17,6 +17,7 @@ import DirectParent from "./components/comunication/directParent";
 import IndirectParent from "./components/comunication/indirectParent";
 import Input from "./components/form/input";
 import Counter from "./components/counter/counter";
+import Mega from "./components/mega/mega";
 
 export default function App(props) {
   return (
@@ -24,6 +25,10 @@ export default function App(props) {
       <h1>Funtamentos React</h1>
 
       <div className="Cards">
+        <Card title="#13 - Contador" color="#1ff3f">
+          <Mega />
+        </Card>
+
         <Card title="#12 - Contador" color="#00F0fff">
           <Counter initialNumber={10} />
         </Card>
