@@ -13,6 +13,7 @@ import StundetsList from "./components/repeticao/studentsList";
 import TableProducts from "./components/repeticao/tableProducts";
 import EvenOrOdd from "./components/conditional/evenOrOdd";
 import UserInfo from "./components/conditional/userInfo";
+import DirectParent from "./components/comunication/directParent";
 
 export default function App(props) {
   return (
@@ -20,6 +21,10 @@ export default function App(props) {
       <h1>Funtamentos React</h1>
 
       <div className="Cards">
+        <Card title="#9 - Comunicação direta" color="#333333">
+          <DirectParent />
+        </Card>
+
         <Card title="#8 - Renderização condicional" color="#856939">
           <EvenOrOdd number={9} />
           <UserInfo user={{ name: "Fernando" }} />
