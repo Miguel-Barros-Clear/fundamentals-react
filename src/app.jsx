@@ -14,6 +14,7 @@ import TableProducts from "./components/repeticao/tableProducts";
 import EvenOrOdd from "./components/conditional/evenOrOdd";
 import UserInfo from "./components/conditional/userInfo";
 import DirectParent from "./components/comunication/directParent";
+import { IndirectParent } from "./components/comunication/indirectParent";
 
 export default function App(props) {
   return (
@@ -21,6 +22,10 @@ export default function App(props) {
       <h1>Funtamentos React</h1>
 
       <div className="Cards">
+        <Card title="#10 - Comunicação indireta" color="#ff00cc">
+          <IndirectParent />
+        </Card>
+
         <Card title="#9 - Comunicação direta" color="#333333">
           <DirectParent />
         </Card>
