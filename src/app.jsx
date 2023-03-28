@@ -9,6 +9,7 @@ import Card from "./components/layout/card";
 import "./app.css";
 import Family from "./components/basics/family";
 import FamilyMember from "./components/basics/familyMember";
+import StundetsList from "./components/repeticao/studentsList";
 
 export default function App(props) {
   return (
@@ -16,6 +17,10 @@ export default function App(props) {
       <h1>Funtamentos React</h1>
 
       <div className="Cards">
+        <Card title="#6 - Repetição" color="#0FA700">
+          <StundetsList />
+        </Card>
+
         <Card title="#5 - Membros da familia" color="#FA1700">
           <Family lastName="Silva">
             <FamilyMember name="Pedro" />
